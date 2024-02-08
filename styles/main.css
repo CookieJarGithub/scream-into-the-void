@@ -1,0 +1,87 @@
+* {
+    font-size: 1em;
+    color: white;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: black;
+}
+
+main {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#dialogue {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2em;
+    user-select: none;
+}
+
+#dialogue span {
+    opacity: 0;
+}
+
+#dialogue span.revealed {
+    opacity: 1;
+}
+
+#dialogue span.italics {
+    font-style: italic;
+}
+
+.btn {
+    font-family: "Times New Roman", Times, serif;
+    display: block;
+    margin: auto;
+    border: none;
+    background: none;
+    font-size: 1.2em;
+    border-bottom: 1px solid white;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+#thought-bubble {
+    resize: none;
+    display: none;
+    margin: auto;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2em;
+    border: none;
+}
+
+#thought-bubble:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+:-moz-placeholder {
+    font-style: italic;  
+}
+
+::-moz-placeholder {
+    font-style: italic;  
+}
+
+:-ms-input-placeholder {  
+    font-style: italic; 
+}
